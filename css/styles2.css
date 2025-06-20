@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'black';
+    src: url(../fuentes/BlackCloverFont.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(../fuentes/texto/CrimsonText-Regular.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#video {
+    margin: 0;
+    display: block;
+    display: flex;
+    align-items: center;
+    background-image: url(../imagenesPersonajesDelAnime/yamiGif.gif);
+}
+
+#video > h1 {
+    font-size: 70px;
+    margin-left: 80px;
+    text-shadow: 1px 2px 4px;
+    font-family: 'black';
+    letter-spacing: 5px;
+}
+
+article {
+    display: flex;
+    column-gap: 40px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: right;
+    height: 1000px;
+}
+
+#articleAsta {
+    background-image: url(../imagenesPersonajesDelAnime/asta.webp);
+}
+
+#articleAsta > .texto {
+    margin-bottom: 50px;
+}
+
+#articleYuno {
+    background-image: url(../imagenesPersonajesDelAnime/yuno.webp);
+}
+
+#articleNoelle {
+    background-image: url(../imagenesPersonajesDelAnime/noelle.webp);
+}
+
+#articleYami {
+    background-image: url(../imagenesPersonajesDelAnime/yami.webp);
+}
+
+#articleJulius {
+    background-image: url(../imagenesPersonajesDelAnime/julius.webp);
+}
+
+#articleConradLeto {
+    background-image: url(../imagenesPersonajesDelAnime/conradLeto.webp);
+}
+
+#articleEdward {
+    background-image: url(../imagenesPersonajesDelAnime/edwardAvalache.webp);
+}
+
+#articlePrincia {
+    background-image: url(../imagenesPersonajesDelAnime/princia.webp);
+}
+
+#articleJester {
+    background-image: url(../imagenesPersonajesDelAnime/jester.webp);
+}
+
+#articleMillie {
+    background-image: url(../imagenesPersonajesDelAnime/millie.webp);
+}
+
+.texto > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    z-index: 1001;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: #e0e0e0;
+    font-family: 'texto';
+}
+
+.texto > h2 {
+    font-size: 40px;
+    font-family: 'black';
+    letter-spacing: 6px;
+    text-shadow: 1px 2px 1px;
+}
+
+.texto > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.texto > ul > li {
+    font-size: 20px;
+}
+
+.boxShadow {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 50%);
+    z-index: 1000;
+    width: 95%;
+    height: 1000px;
+    position: absolute;
+}
+
+span {
+    color: #DECCB0;
+}

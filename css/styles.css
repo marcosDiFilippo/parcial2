@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'black';
+    src: url(../fuentes/BlackCloverFont.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(../fuentes/texto/CrimsonText-Regular.ttf);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#containerVideo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'black';
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'texto';
+}
+
+.videoFondo {
+    width: 100%;
+    height: 100%;
+}
+
+#containerVideo div {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+#sobreLaPelicula {
+    height: 900px;
+    background-image: url(../imagenesIndex/fondoBlackClover.webp);
+    display: flex;
+    justify-content: left;
+    background-size: cover;
+    background-position: 100% center;
+    transition: background-position 2.5s ease-out;
+    align-items:flex-start;
+    padding-top: 180px;
+    padding-left: 40px;
+    color: white;
+}
+
+
+#sobreLaPelicula > div {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    row-gap: 40px;
+    flex-basis: 500px;
+}
+
+#sobreLaPelicula > div > h2 {
+    font-size: 60px;
+    color: antiquewhite;
+    font-family: 'black';
+    letter-spacing: 6px;
+}
+
+#sobreLaPelicula > div > a {
+    color: white;
+    border: white solid 1px;
+    font-size: 40px;
+    border-radius: 3px;
+}
+
+#reparto {
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    background-color: #000000;
+}
+
+#reparto > #texto {
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+#reparto > #texto > h2 {
+    display: flex;
+    font-size: 100px;
+    font-family: 'black';
+    letter-spacing: 8px;
+}
+
+#reparto > #texto > a {
+    color: white;
+    border: white solid 1px;
+    font-size: 40px;
+    border-radius: 3px;
+}
+
+#reparto > .imagenes {
+    display: flex;
+    flex-direction: column;
+}
+
+.personajes {
+    width: 300px;
+    height: auto;
+    padding: 0;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.363), 0 0 10px rgba(255, 255, 255, 0.664);
+}
+
+#curiosidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    row-gap: 30px;
+    background: linear-gradient(to bottom, #000000, #A9A8A8);
+}
+
+#imagenesCuriosidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#imagenesCuriosidades > figure {
+    margin: 0;
+    padding: 0;
+}
+
+#imagenesCuriosidades + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+}
+
+.personajesCuriosidades {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+    width: 814px;
+    height: auto;
+}
+
+#imagenesCuriosidades + div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 25px;
+    border-radius: 5px;
+    border:#000000 solid 2px;
+    width: 150px;
+}
+
+#imagenesCuriosidades + div > a:hover {
+    background-color: #0000003a;
+}
+
+.linkMas:hover {
+    background-color: #85858527;
+}
+
+#formulario {
+    background: linear-gradient(to bottom, #A9A8A8, #D8D8D8, #F0F0F0);
+}

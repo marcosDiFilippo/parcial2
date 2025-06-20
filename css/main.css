@@ -20,6 +20,7 @@ header {
     z-index: 1001;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.185);
+    font-family: 'texto';
 }
 
 nav {

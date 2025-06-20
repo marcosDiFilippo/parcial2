@@ -38,16 +38,16 @@ p {
     height: 900px;
     background-image: url(../imagenesIndex/fondoBlackClover.webp);
     display: flex;
-    justify-content: left;
+    justify-content: right;
     background-size: cover;
-    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: background-position 2.5s ease-out;
-    align-items:flex-start;
+    align-items: flex-start;
     padding-top: 180px;
-    padding-left: 40px;
-    color: white;
+    padding-right: 160px;
+    color: rgb(207, 207, 207);
 }
-
 
 #sobreLaPelicula > div {    
     display: flex;
@@ -79,20 +79,25 @@ p {
     background-color: #000000;
 }
 
-#reparto > #texto {
+#texto {
     display: flex;
     color: aliceblue;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 50px;
+    row-gap: 40px;
 }
 
-#reparto > #texto > h2 {
+#texto > h2 {
     display: flex;
     font-size: 100px;
     font-family: 'black';
     letter-spacing: 8px;
 }
 
-#reparto > #texto > a {
+#texto > a {
     color: white;
     border: white solid 1px;
     font-size: 40px;
@@ -170,8 +175,13 @@ p {
     background-color: #0000003a;
 }
 
+.linkMas {
+    width: 200px;
+    text-align: center;
+}
+
 .linkMas:hover {
-    background-color: #85858527;
+    background-color: #85858518;
 }
 
 #estudio {
@@ -186,9 +196,4 @@ p {
 
 #estudio > div {
     margin-right: 30px;
-}
-
-iframe {
-    border-radius: 10px;
-    margin-left: 20px;
 }

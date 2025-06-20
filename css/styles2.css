@@ -9,6 +9,7 @@ section {
     display: flex;
     align-items: center;
     background-image: url(../imagenesPersonajesDelAnime/yamiGif.gif);
+    padding-bottom: 80px;
 }
 
 #video > h1 {

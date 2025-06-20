@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'black';
-    src: url(../fuentes/BlackCloverFont.ttf);
-}
-
-@font-face {
-    font-family: 'texto';
-    src: url(../fuentes/texto/CrimsonText-Regular.ttf);
-}
-
 section {
     display: flex;
     flex-direction: column;

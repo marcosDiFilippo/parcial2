@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'black';
+    src: url(../fuentes/BlackCloverFont.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(../fuentes/texto/CrimsonText-Regular.ttf);
+}
+
 body, html {
     margin: 0;
     padding: 0;

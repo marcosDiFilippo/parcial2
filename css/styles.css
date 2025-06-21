@@ -15,12 +15,33 @@ section {
 h1 {
     font-family: 'black';
     letter-spacing: 4px;
-    font-size: 40px;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'black';
+    font-size: 60px;
+    letter-spacing: 6px;
+    text-align: center;
 }
 
 p {
     font-size: 25px;
     font-family: 'texto';
+    line-height: 45px;
+    text-align: center;
+}
+
+.linkMas {
+    width: 200px;
+    text-align: center;
+    border: #D8D8D8 solid 2px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.linkMas:hover {
+    background-color: #53535344;
 }
 
 .videoFondo {
@@ -36,7 +57,7 @@ p {
 
 #sobreLaPelicula {
     height: 900px;
-    background-image: url(../imagenesIndex/fondoBlackClover.webp);
+    background-image: url(../contenidoIndex/fondoBlackClover.webp);
     display: flex;
     justify-content: right;
     background-size: cover;
@@ -58,20 +79,6 @@ p {
     flex-basis: 500px;
 }
 
-#sobreLaPelicula > div > h2 {
-    font-size: 60px;
-    color: antiquewhite;
-    font-family: 'black';
-    letter-spacing: 6px;
-}
-
-#sobreLaPelicula > div > a {
-    color: white;
-    border: white solid 1px;
-    font-size: 40px;
-    border-radius: 3px;
-}
-
 #reparto {
     display: flex;
     justify-content: end;
@@ -79,29 +86,22 @@ p {
     background-color: #000000;
 }
 
-#texto {
+#textoReparto {
     display: flex;
     color: aliceblue;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
     margin: 50px;
     row-gap: 40px;
 }
 
-#texto > h2 {
-    display: flex;
-    font-size: 100px;
-    font-family: 'black';
-    letter-spacing: 8px;
+.figurePersonajes:hover img {
+    scale: 1.1;
 }
 
-#texto > a {
-    color: white;
-    border: white solid 1px;
-    font-size: 40px;
-    border-radius: 3px;
+.figurePersonajes img {
+    transition: scale 0.5s ease;
 }
 
 #reparto > .imagenes {
@@ -110,30 +110,27 @@ p {
 }
 
 .personajes {
-    width: 300px;
+    width: 260px;
     height: auto;
     padding: 0;
     border-radius: 25px;
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.363), 0 0 10px rgba(255, 255, 255, 0.664);
+    box-shadow:
+    0 4px 8px rgba(100, 100, 100, 0.4),
+    0 8px 16px rgba(200, 200, 200, 0.3),
+    0 12px 24px rgba(255, 255, 255, 0.2);
 }
 
 #curiosidades {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    row-gap: 30px;
+    column-gap: 30px;
     background: linear-gradient(to bottom, #000000, #A9A8A8);
 }
 
-#imagenesCuriosidades {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 50px;
-    margin: 0;
-    padding: 0;
+#textoCuriosidades {
+    font-family: 'texto';
+    row-gap: 20px;
 }
 
 #imagenesCuriosidades > figure {
@@ -147,53 +144,60 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    row-gap: 30px;
     width: 800px;
     padding: 0;
     margin: 0;
 }
 
 .personajesCuriosidades {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 30px;
-    width: 814px;
-    height: auto;
+    border-radius: 10px;
 }
 
-#imagenesCuriosidades + div > a {
+.personajesCuriosidades > img {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.363), 0 0 10px rgba(255, 255, 255, 0.664);
+}
+
+.personajesCuriosidades img {
+    transition: scale 0.5s ease;
+}
+
+.personajesCuriosidades img:hover {
+    scale: 0.9;
+}
+
+#contacto {
+    background-color: #A9A8A8;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: #000000;
-    font-size: 25px;
-    border-radius: 5px;
-    border:#000000 solid 2px;
-    width: 150px;
-}
-
-#imagenesCuriosidades + div > a:hover {
-    background-color: #0000003a;
-}
-
-.linkMas {
-    width: 200px;
     text-align: center;
 }
 
-.linkMas:hover {
-    background-color: #85858518;
+#contacto > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    flex-basis: 1100px;
+}
+
+#contacto > figure img {
+    border-radius: 10px;
+    width: 550px;
 }
 
 #estudio {
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     background: linear-gradient(to bottom, #A9A8A8, #D8D8D8, #F0F0F0);
-    justify-content: space-evenly;
     align-items: center;
-    font-family: 'texto';
-    text-align: justify;
 }
 
-#estudio > div {
-    margin-right: 30px;
+#estudio > .divTexto {
+    margin: 0 40px;
 }

@@ -14,12 +14,13 @@ body, html {
 }
 
 header {
-    position:fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    margin-top: -100px;
     height: 100px;
     z-index: 1001;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.185);
+    background: rgba(0, 0, 0, 0.205);
     font-family: 'texto';
 }
 
@@ -53,16 +54,30 @@ a {
 
 .navLink {
     position: relative;
-    text-decoration: none;
     color: beige;
+    margin: 0 10px;
     padding: 0;
-    margin: 0;
 }
 
-#envia {
+.navLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.5s ease;
+}
+
+.navLink:hover::after {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.navLink:last-of-type {
     display: flex;
     align-items: center;
-    position: relative;
     column-gap: 10px;
     margin: 0;
     padding: 0;

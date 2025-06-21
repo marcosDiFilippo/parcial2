@@ -1,124 +1,120 @@
 section {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
-main {
-    font-family: 'texto';
-}
-
-.videoFondo {
-    width: 100%;
-    height: 100%;
-}
-
-#containerVideo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-#containerVideo div {
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-
-h1 {
-    font-family: 'black';
-    letter-spacing: 4px;
-    font-size: 40px;
-}
-
-#espada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    text-align: justify;
+#video {
     margin: 0;
-    padding: 0;
-}
-
-#espada > figure {
-    margin: 0 0 -7.5px 0;
-    padding: 0;
-} 
-
-.divEspada {
-    margin: 20px 20px 0 20px;
-}
-
-.divEspada > h2 {
-    text-align: center;
-}
-
-.divEspada > ul {
+    display: block;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-image: url(../contenidoPersonajes/yamiGif.gif);
+    padding-bottom: 80px;
+}
+
+#video > h1 {
+    font-size: 70px;
+    margin-left: 80px;
+    text-shadow: 1px 2px 4px;
+    font-family: 'black';
+    letter-spacing: 5px;
 }
 
 article {
-    padding: 0;
-    margin: 0;
-}
-
-.articleVideos {
     display: flex;
+    column-gap: 40px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: right;
+    height: 1000px;
 }
 
-.articlePremios {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+#articleAsta > .texto {
+    margin-bottom: 50px;
 }
 
-.divTexto {
+#articleAsta {
+    background-image: url(../contenidoPersonajes/asta.webp);
+}
+
+#articleYuno {
+    background-image: url(../contenidoPersonajes/yuno.webp);
+}
+
+#articleNoelle {
+    background-image: url(../contenidoPersonajes/noelle.webp);
+}
+
+#articleYami {
+    background-image: url(../contenidoPersonajes/yami.webp);
+}
+
+#articleJulius {
+    background-image: url(../contenidoPersonajes/julius.webp);
+}
+
+#articleConradLeto {
+    background-image: url(../contenidoPersonajes/conradLeto.webp);
+}
+
+#articleEdward {
+    background-image: url(../contenidoPersonajes/edwardAvalache.webp);
+}
+
+#articlePrincia {
+    background-image: url(../contenidoPersonajes/princia.webp);
+}
+
+#articleJester {
+    background-image: url(../contenidoPersonajes/jester.webp);
+}
+
+#articleMillie {
+    background-image: url(../contenidoPersonajes/millie.webp);
+}
+
+
+.texto > ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    z-index: 1001;
     align-items: center;
-    margin: 0 40px 0 40px;
+    justify-content: center;
+    margin: 20px;
+    color: #e0e0e0;
+    font-family: 'texto';
+}
+
+.texto > h2 {
+    font-size: 40px;
+    font-family: 'black';
+    letter-spacing: 6px;
+    text-shadow: 1px 2px 1px;
+}
+
+.texto > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.texto > ul > li {
     font-size: 20px;
-    text-align: justify;
-    padding: 0;
 }
 
-.divVideos {
-    margin-bottom: -6px;
-    padding: 0;
+.boxShadow {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 50%);
+    z-index: 1000;
+    width: 95%;
+    height: 1000px;
+    position: absolute;
 }
 
-.divTexto > h2 {
-    font-size: 80px;
-    padding: 0;
-    margin: 0;
-}
-
-#imgNetflix {
-    width: 1200px;
-    height: auto;
-}
-
-#animeAwards {
-    width: 1200px;
-}
-
-#planeta {
-    width: 1200px;
-}
-
-figure {
-    padding: 0;
-    margin: 0;
-    margin-bottom: -6px;
+span {
+    color: #DECCB0;
 }

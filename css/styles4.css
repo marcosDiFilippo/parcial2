@@ -1,88 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+main {
+    font-family: 'texto';
     background-color: #0d0d0d;
-    color: #eaeaea;
 }
 
 section {
-    margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    line-height: 40px;
+    color: #eaeaea;
+    row-gap: 100px;
 }
 
-#video {
+article {
+    max-width: 1700px;
+    border-radius: 12px;
+    background: #1a1a1a;
+}
+
+.videoFondo {
+    width: 100%;
+}
+
+#containerVideo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     max-width: 2000px;
 }
 
-#video > video {
-    width: 1900px;
+#containerVideo div {
+    position: absolute;
+    text-align: center;
+    color: white;
 }
 
-.box {
-    display: flex;
-    background: #1a1a1a;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    max-width: 1700px;
-}
-
-#fondo {
-    width: 1700px;
-}
-
-.divTexto1, .divTexto {
-    flex: 1 1 60%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.divTexto1 > div,
-.divTexto > div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.imagenes {
-    flex: 1 1 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #111;
-}
-
-.imagenes img {
-    width: 100%;
-    height: auto;
-}
-
-h2 {
-    font-size: 28px;
-    color: #ffd700;
-    margin-bottom: 10px;
+h1 {
+    font-family: 'black';
+    letter-spacing: 4px;
+    font-size: 40px;
 }
 
 p {
-    font-size: 16px;
-    color: #d1d1d1;
+    line-height: 40px;
 }
 
-strong {
-    color: #ffffff;
+#espada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: justify;
+    padding: 0;
 }
 
-span {
-    color: #9ed2ff;
-    font-style: italic;
+#espada > figure {
+    margin: 0 0 -7.5px 0;
+    padding: 0;
+}
+
+.divEspada {
+    margin: 20px 20px 0 20px;
+}
+
+.divEspada > h2 {
+    text-align: center;
+}
+
+.divEspada > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    padding: 0;
+    margin: 0;
+}
+
+.articleVideos {
+    display: flex;
+}
+
+.articlePremios {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.divTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0;
+}
+
+.divTexto > h2 {
+    font-size: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+#imgNetflix {
+    width: 880px;
+    height: auto;
+}
+
+#animeAwards {
+    width: 880px;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
 }

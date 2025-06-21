@@ -1,119 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #eaeaea;
+}
+
 section {
+    margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    line-height: 40px;
 }
 
 #video {
-    margin: 0;
-    display: block;
+    max-width: 2000px;
+}
+
+#video > video {
+    width: 1900px;
+}
+
+.box {
     display: flex;
-    align-items: center;
-    background-image: url(../imagenesPersonajesDelAnime/yamiGif.gif);
-    padding-bottom: 80px;
+    background: #1a1a1a;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 1700px;
 }
 
-#video > h1 {
-    font-size: 70px;
-    margin-left: 80px;
-    text-shadow: 1px 2px 4px;
-    font-family: 'black';
-    letter-spacing: 5px;
+#fondo {
+    width: 1700px;
 }
 
-article {
-    display: flex;
-    column-gap: 40px;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position-x: right;
-    height: 1000px;
-}
-
-#articleAsta {
-    background-image: url(../imagenesPersonajesDelAnime/asta.webp);
-}
-
-#articleAsta > .texto {
-    margin-bottom: 50px;
-}
-
-#articleYuno {
-    background-image: url(../imagenesPersonajesDelAnime/yuno.webp);
-}
-
-#articleNoelle {
-    background-image: url(../imagenesPersonajesDelAnime/noelle.webp);
-}
-
-#articleYami {
-    background-image: url(../imagenesPersonajesDelAnime/yami.webp);
-}
-
-#articleJulius {
-    background-image: url(../imagenesPersonajesDelAnime/julius.webp);
-}
-
-#articleConradLeto {
-    background-image: url(../imagenesPersonajesDelAnime/conradLeto.webp);
-}
-
-#articleEdward {
-    background-image: url(../imagenesPersonajesDelAnime/edwardAvalache.webp);
-}
-
-#articlePrincia {
-    background-image: url(../imagenesPersonajesDelAnime/princia.webp);
-}
-
-#articleJester {
-    background-image: url(../imagenesPersonajesDelAnime/jester.webp);
-}
-
-#articleMillie {
-    background-image: url(../imagenesPersonajesDelAnime/millie.webp);
-}
-
-.texto > ul {
+.divTexto1, .divTexto {
+    flex: 1 1 60%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
-.texto {
+.divTexto1 > div,
+.divTexto > div {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    z-index: 1001;
+    gap: 20px;
+}
+
+.imagenes {
+    flex: 1 1 40%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
-    color: #e0e0e0;
-    font-family: 'texto';
+    background-color: #111;
 }
 
-.texto > h2 {
-    font-size: 40px;
-    font-family: 'black';
-    letter-spacing: 6px;
-    text-shadow: 1px 2px 1px;
+.imagenes img {
+    width: 100%;
+    height: auto;
 }
 
-.texto > p {
-    text-align: center;
-    font-size: 18px;
+h2 {
+    font-size: 28px;
+    color: #ffd700;
+    margin-bottom: 10px;
 }
 
-.texto > ul > li {
-    font-size: 20px;
+p {
+    font-size: 16px;
+    color: #d1d1d1;
 }
 
-.boxShadow {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 50%);
-    z-index: 1000;
-    width: 95%;
-    height: 1000px;
-    position: absolute;
+strong {
+    color: #ffffff;
 }
 
 span {
-    color: #DECCB0;
+    color: #9ed2ff;
+    font-style: italic;
 }

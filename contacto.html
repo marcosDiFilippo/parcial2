@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles5.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div>
+                <a href="./index.html">
+                    <img id="logoLink" src="./contenidoIndex/logoBlackClover.webp" alt="">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a class="navLink" href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./sobreLaPelicula.html">
+                            Sobre La Pelicula
+                        </a>
+                    </li>   
+                    <li>
+                        <a class="navLink" href="./reparto.html">
+                            Reparto
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./curiosidades.html">Curiosidades</a>
+                    </li>
+                    <li>
+                        <a class="navLink" href="./contacto.html">
+                            Envia tu consulta
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <h1>hola</h1>
+        <section>
+            <article id="contacto">
+                <h1>Contacto</h1>
+                    <p>Completa el siguiente formulario para comunicarte con nosotros:</p>
+                        <form action="" method="post">
+                            <fieldset id="datos">
+                                <legend>
+                                    Ingrese sus datos
+                                </legend>
+
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+
+                                <label for="correo">Correo Electronico</label>
+                                <input type="email" name="correo" placeholder="Ingrese su correo electronico" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    Ingrese el mensaje
+                                </legend>
+
+                                <label for="mensaje">Mensaje</label>
+                                <input type="text" name="mensaje" placeholder="Ingrese el mensaje" required>
+                            </fieldset>
+
+                            <input id="enviar" type="submit" value="Enviar">
+                        </form>
+            </article>
+        </section>
     </main>
 </body>
 </html>

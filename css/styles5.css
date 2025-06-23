@@ -5,11 +5,11 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     width: 100%;
+    gap: 20px;
     max-width: 700px;
     background-color: #1a1a1a;
-    padding: 40px;
+    padding: 30px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
@@ -17,7 +17,7 @@ form {
 fieldset {
     border: 1px solid #333;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;

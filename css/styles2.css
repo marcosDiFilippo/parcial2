@@ -10,7 +10,6 @@ body {
 }
 
 section {
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +18,15 @@ section {
     line-height: 40px;
 }
 
-#video {
-    max-width: 2000px;
+#video > video {
+    max-width: 1900px;
 }
 
-#video > video {
-    width: 1900px;
+h1 {
+    position: absolute;
+    top: 500px;
+    left: 670px;
+    font-size: 80px;
 }
 
 .box {
@@ -33,10 +35,6 @@ section {
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     max-width: 1700px;
-}
-
-#fondo {
-    width: 1700px;
 }
 
 .divTexto1, .divTexto {

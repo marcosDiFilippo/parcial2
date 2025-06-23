@@ -12,9 +12,24 @@ section {
     height: 100%;
 }
 
+#containerVideo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 1;
+}
+
+#containerVideo > div {
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
 h1 {
-    font-family: 'black';
-    letter-spacing: 4px;
     font-size: 80px;
 }
 
@@ -46,7 +61,6 @@ p {
 
 .videoFondo {
     width: 100%;
-    height: 100%;
 }
 
 #containerVideo div {

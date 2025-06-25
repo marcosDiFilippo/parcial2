@@ -1,9 +1,29 @@
+/* Estructura general */
 section {
     display: flex;
     flex-direction: column;
     color: aliceblue;
 }
 
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'black';
+    font-size: 60px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'texto';
+    line-height: 45px;
+    text-align: center;
+}
+
+/* Video fondo*/
 #containerVideo {
     position: relative;
     display: flex;
@@ -25,29 +45,17 @@ section {
 }
 
 #containerVideo > div {
+    position: absolute;
     z-index: 2;
     color: white;
     text-align: center;
 }
 
-h1 {
-    font-size: 80px;
+.videoFondo {
+    width: 100%;
 }
 
-h2 {
-    font-family: 'black';
-    font-size: 60px;
-    letter-spacing: 6px;
-    text-align: center;
-}
-
-p {
-    font-size: 25px;
-    font-family: 'texto';
-    line-height: 45px;
-    text-align: center;
-}
-
+/* Botón con gradiente */
 .linkMas {
     width: 200px;
     text-align: center;
@@ -57,6 +65,7 @@ p {
     border: solid 1px white;
     position: relative;
     z-index: 0;
+    transition: all 0.3s ease;
 }
 
 .linkMas::after {
@@ -72,38 +81,30 @@ p {
     z-index: -1;
 }
 
-.linkMas:hover::after {
-    width: 100%;
-
-}
-.linkMas:hover{
+.linkMas:hover {
     color: #000000;
 }
 
-.videoFondo {
+.linkMas:hover::after {
     width: 100%;
 }
 
-#containerVideo div {
-    position: absolute;
-    text-align: center;
-}
-
+/* Sobre la película */
 #sobreLaPelicula {
     height: 900px;
     background-image: url(../contenidoIndex/fondoBlackClover.webp);
-    display: flex;
-    justify-content: right;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-position 2.5s ease-out;
+    display: flex;
+    justify-content: right;
     align-items: flex-start;
     padding-top: 180px;
     padding-right: 160px;
 }
 
-#sobreLaPelicula > div {    
+#sobreLaPelicula > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,33 +113,34 @@ p {
     flex-basis: 500px;
 }
 
+/* Reparto */
 #reparto {
     display: flex;
     justify-content: end;
-    align-items:center;
+    align-items: center;
 }
 
 #textoReparto {
     display: flex;
-    color: aliceblue;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
     margin: 50px;
     row-gap: 40px;
 }
 
-.figurePersonajes:hover img {
-    scale: 1.2;
+#reparto > .imagenes {
+    display: flex;
+    flex-direction: column;
 }
 
 .figurePersonajes img {
     transition: scale 0.5s ease;
 }
 
-#reparto > .imagenes {
-    display: flex;
-    flex-direction: column;
+.figurePersonajes:hover img {
+    scale: 1.2;
 }
 
 .personajes {
@@ -147,11 +149,12 @@ p {
     padding: 0;
     border-radius: 25px;
     box-shadow:
-    0 4px 8px rgba(100, 100, 100, 0.4),
-    0 8px 16px rgba(200, 200, 200, 0.3),
-    0 12px 24px rgba(255, 255, 255, 0.2);
+        0 4px 8px rgba(100, 100, 100, 0.4),
+        0 8px 16px rgba(200, 200, 200, 0.3),
+        0 12px 24px rgba(255, 255, 255, 0.2);
 }
 
+/* Curiosidades */
 #curiosidades {
     display: flex;
     justify-content: center;
@@ -188,10 +191,9 @@ p {
     width: 800px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.363), 0 0 10px rgba(255, 255, 255, 0.664);
-}
-
-.personajesCuriosidades img {
+    box-shadow:
+        0 10px 20px rgba(255, 255, 255, 0.363),
+        0 0 10px rgba(255, 255, 255, 0.664);
     transition: scale 0.5s ease;
 }
 
@@ -199,6 +201,7 @@ p {
     scale: 0.9;
 }
 
+/* Contacto */
 #contacto {
     display: flex;
     flex-direction: row;
@@ -219,8 +222,18 @@ p {
 #contacto > figure img {
     border-radius: 10px;
     width: 550px;
+    box-shadow:
+        0 4px 8px rgba(100, 100, 100, 0.4),
+        0 8px 16px rgba(200, 200, 200, 0.3),
+        0 12px 24px rgba(255, 255, 255, 0.2);
+    transition: scale 0.3s ease;
 }
 
+#contacto > figure img:hover {
+    scale: 0.9;
+}
+
+/* Estudio */
 #estudio {
     display: flex;
     column-gap: 40px;

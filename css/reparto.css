@@ -5,7 +5,6 @@ section {
 
 #video {
     margin: 0;
-    display: block;
     display: flex;
     align-items: center;
     background-image: url(../contenidoPersonajes/yamiGif.gif);
@@ -22,59 +21,25 @@ article {
     display: flex;
     column-gap: 40px;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position-x: right;
     height: 1000px;
 }
 
+/* Artículos con fondo distinto */
+#articleAsta    { background-image: url(../contenidoPersonajes/asta.webp); }
+#articleYuno    { background-image: url(../contenidoPersonajes/yuno.webp); }
+#articleNoelle  { background-image: url(../contenidoPersonajes/noelle.webp); }
+#articleYami    { background-image: url(../contenidoPersonajes/yami.webp); }
+#articleJulius  { background-image: url(../contenidoPersonajes/julius.webp); }
+#articleConradLeto { background-image: url(../contenidoPersonajes/conradLeto.webp); }
+#articleEdward  { background-image: url(../contenidoPersonajes/edwardAvalache.webp); }
+#articlePrincia { background-image: url(../contenidoPersonajes/princia.webp); }
+#articleJester  { background-image: url(../contenidoPersonajes/jester.webp); }
+#articleMillie  { background-image: url(../contenidoPersonajes/millie.webp); }
+
 #articleAsta > .texto {
     margin-bottom: 50px;
-}
-
-#articleAsta {
-    background-image: url(../contenidoPersonajes/asta.webp);
-}
-
-#articleYuno {
-    background-image: url(../contenidoPersonajes/yuno.webp);
-}
-
-#articleNoelle {
-    background-image: url(../contenidoPersonajes/noelle.webp);
-}
-
-#articleYami {
-    background-image: url(../contenidoPersonajes/yami.webp);
-}
-
-#articleJulius {
-    background-image: url(../contenidoPersonajes/julius.webp);
-}
-
-#articleConradLeto {
-    background-image: url(../contenidoPersonajes/conradLeto.webp);
-}
-
-#articleEdward {
-    background-image: url(../contenidoPersonajes/edwardAvalache.webp);
-}
-
-#articlePrincia {
-    background-image: url(../contenidoPersonajes/princia.webp);
-}
-
-#articleJester {
-    background-image: url(../contenidoPersonajes/jester.webp);
-}
-
-#articleMillie {
-    background-image: url(../contenidoPersonajes/millie.webp);
-}
-
-
-.texto > ul {
-    display: flex;
-    flex-direction: column;
 }
 
 .texto {
@@ -87,6 +52,11 @@ article {
     margin: 20px;
     color: #e0e0e0;
     font-family: 'texto';
+}
+
+.texto > ul {
+    display: flex;
+    flex-direction: column;
 }
 
 .texto > h2 {

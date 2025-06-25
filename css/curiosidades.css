@@ -16,6 +16,8 @@ article {
     max-width: 1700px;
     border-radius: 12px;
     background: #1a1a1a;
+    padding: 0;
+    margin: 0;
 }
 
 #containerVideo {
@@ -74,8 +76,10 @@ span {
     padding: 0;
 }
 
-#espada > figure {
-    margin: 0 0 -7.5px 0;
+#espada > figure,
+figure {
+    margin: 0;
+    margin-bottom: -5px;
     padding: 0;
 }
 
@@ -94,17 +98,12 @@ span {
     align-items: center;
 }
 
-article {
-    padding: 0;
-    margin: 0;
-}
-
-.articleVideos {
+.articleVideos,
+.articlePremios {
     display: flex;
 }
 
 .articlePremios {
-    display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -115,7 +114,7 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 40px 0 40px;
+    margin: 0 40px;
     font-size: 20px;
     text-align: justify;
     padding: 0;
@@ -127,18 +126,10 @@ article {
     margin: 0;
 }
 
-#imgNetflix {
-    width: 880px;
-    height: auto;
-}
-
+#imgNetflix,
 #animeAwards {
     width: 880px;
-}
-
-figure {
-    padding: 0;
-    margin: 0;
+    height: auto;
 }
 
 footer {

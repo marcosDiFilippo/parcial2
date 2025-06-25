@@ -8,7 +8,7 @@
     src: url(../fuentes/texto/CrimsonText-Regular.ttf);
 }
 
-body, html {
+html, body {
     margin: 0;
     padding: 0;
     background-color: #0d0d0d;
@@ -47,6 +47,10 @@ ul {
     transition: all 1s ease;
 }
 
+footer > ul {
+    justify-content: space-evenly;
+}
+
 a {
     text-decoration: none;
     padding: 20px;
@@ -67,7 +71,7 @@ a {
     width: 0;
     height: 2px;
     background-color: #ffffff;
-    transition: width 0.4s ease;
+    transition: width 0.3s ease;
 }
 
 .navLink:hover::after {
@@ -110,19 +114,13 @@ footer > a > img {
     height: auto;
 }
 
-footer > ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .logosFooter {
     width: 60px;
     height: 60px;
-    transition: background-color 0.5s ease;
     border-radius: 10px;
+    transition: background-color 0.5s ease;
 }
 
 .logosFooter:hover {
     background-color: #616161;
-    border-radius: 10px;
 }

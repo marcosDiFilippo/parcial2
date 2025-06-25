@@ -66,8 +66,16 @@ fieldset > input {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 #mensaje {
-    padding-bottom: 100px;
+    resize: none;
+    background-color: #333;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 20px;
+    color: #eaeaea;
+    font-family: 'texto';
+    border: 0;
 }
